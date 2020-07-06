@@ -40,20 +40,12 @@ Theta_grad = zeros(size(Theta));
 %                     partial derivatives w.r.t. to each element of Theta
 %
 
+# error factor
+errorFactor = ((X * Theta') - Y);
+# .* R;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+# cost function
+J = (1./2) * sum(errorFactor.^2);
 
 % =============================================================
 
