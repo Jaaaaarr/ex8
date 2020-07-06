@@ -25,8 +25,8 @@ sigma2 = zeros(n, 1);
 #  sigma2(i, :) = (1./m) .* sum( (X(i,:) - mu(i)).^2 );
 #  endfor
 
-mu = (mean(X))';
-sigma2 = (var(X))';
+mu = (mean(X));
+sigma2 = (var(X));
 
 % =============================================================
 
